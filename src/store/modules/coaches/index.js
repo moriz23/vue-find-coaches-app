@@ -1,24 +1,24 @@
-import mutations from './mutations.js';
-import actions from './actions.js';
-import getters from './getters.js';
+import mutations from './mutations.js'
+import actions from './actions.js'
+import getters from './getters.js'
 
 export default {
   namespaced: true,
-  state() {
+  state () {
     return {
       coaches: [
         {
           id: 'c1',
-          firstName: 'Maximilian',
-          lastName: 'Schwarzmüller',
+          firstName: 'John',
+          lastName: 'Smith',
           areas: ['frontend', 'backend', 'career'],
           description:
-            "I'm Maximilian and I've worked as a freelance web developer for years. Let me help you become a developer as well!",
+            "I'm John and I've worked as a freelance web developer for years. Let me help you become a developer as well!",
           hourlyRate: 30
         },
         {
           id: 'c2',
-          firstName: 'Julie',
+          firstName: 'Rebecca',
           lastName: 'Jones',
           areas: ['frontend', 'career'],
           description:
@@ -26,9 +26,9 @@ export default {
           hourlyRate: 30
         }
       ]
-    };
+    }
   },
   mutations: mutations,
   actions: actions,
   getters: getters
-};
+}
